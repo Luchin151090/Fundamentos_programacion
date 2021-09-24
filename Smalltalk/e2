@@ -1,0 +1,6 @@
+| nu|
+Transcript clear.
+nu:=UIManager default request: 'numero :'.
+nu:=nu asNumber.
+(nu\\2)==1 ifTrue:[Transcript show: 'es impar']
+					ifFalse:[Transcript show: 'es par'].
