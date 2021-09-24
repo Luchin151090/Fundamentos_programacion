@@ -1,0 +1,7 @@
+| value1 value2|
+Transcript clear.
+value1:= UIManager default request: 'enter first value'.
+value2:= UIManager default request: 'enter second value'.
+value1:=value1 asNumber.
+value2:=value2 asNumber.
+value1 to: value2 do: [ :i | Transcript show: (i) ; cr]
